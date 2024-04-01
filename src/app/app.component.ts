@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'usuarios-angular';
+  isContactVisible = false;
+  isMenuOpened = false;
+
+  toggleContactVisibility(): void{
+    this.isContactVisible = !this.isContactVisible;
+  }
+
+  showMenu(): void{
+    this.isContactVisible = false;
+    this.isMenuOpened = true;
+  }
+
+  hideMenu(): void {
+    this.isMenuOpened = false;
+    
+  }
 }

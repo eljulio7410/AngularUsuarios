@@ -1,0 +1,29 @@
+<h1>Registra tus Datos</h1>
+<form>
+    <label>
+        Nombre de Usuario
+        <input [(ngModel)] = "user.username" type="username" name="username">
+    </label>
+    <label>
+        Contraseña
+        <input [(ngModel)] = "user.password" type="password" name="password">
+    </label>
+    <label>
+        Nombre
+        <input [(ngModel)] = "user.nombre" type="text" name="name">
+    </label>
+    <label>
+        Apellido
+        <input [(ngModel)] = "user.apellido" type="text" name="name">
+    </label>
+    <label>
+        Telefono
+        <input [(ngModel)] = "user.telefono" type="number" name="phone">
+    </label>
+    <label>
+        Correo
+        <input [(ngModel)] = "user.email" type="email" name="email">
+    </label>
+</form>
+
+<button (click)="crearUsuario()">Registrar</button>

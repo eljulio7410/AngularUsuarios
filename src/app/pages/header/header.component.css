@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 50px;
+    padding: 0 16px;
+    background-color: #b588f8;
+    color: #fff;
+  }
+  
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .logo:hover {
+    text-decoration: underline;
+  }
+  
+  button{
+    display: grid;
+    place-items: center;
+    background: none;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+  }
+  button:hover {
+    background-color: #7d29fa;
+  }
