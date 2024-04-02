@@ -31,7 +31,7 @@ export class SignupComponent implements OnInit {
       }).then((result) => {
         
         if (result.isConfirmed) {
-          this.usuarioService.crearUsuario(this.user).subscribe()
+           this.usuarioService.crearUsuario(this.user).subscribe()
           Swal.fire("Guardado!", "", "success");
          
         } else if (result.isDenied) {
